@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AdaugaActivity">
+
+    <EditText
+        android:id="@+id/et_suma"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="numberDecimal"
+        android:hint="@string/suma_label"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/data_label"/>
+
+    <DatePicker
+        android:id="@+id/dp_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+    <EditText
+        android:id="@+id/et_descriere"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:inputType="text"
+        android:hint="@string/descriere_label"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/tip_label"/>
+
+    <Spinner
+        android:id="@+id/sp_tranzactie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:entries="@array/tranzactii"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/rg_valuta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/valuta_label"/>
+
+        <RadioButton
+            android:id="@+id/rb_ron"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/valuta1"/>
+        <RadioButton
+            android:id="@+id/rb_eur"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/valuta2"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_adauga"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/action_adauga_tranzactie" />
+</LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bugetul Meu 1.0</string>
+    <string name="action_despre">Despre aplicatie</string>
+    <string name="app_author">Author</string>D
+    <string name="action_adauga">Adauga tranzactii</string>
+    <string name="action_adauga_tranzactie">Adauga tranzactie</string>
+    <string name="suma_label">Introduceti suma:</string>
+    <string name="data_label">Selectati data:</string>
+    <string name="descriere_label">Introduceti o descriere:</string>
+    <string name="tip_label">Selectati tipul tranzactiei:</string>
+    <string name="valuta_label">Selectati valuta:</string>
+    <string name="valuta1">RON</string>
+    <string name="valuta2">EUR</string>
+
+    <string-array name="tranzactii">
+        <item>Venit</item>
+        <item>Cheltuieli</item>
+    </string-array>
+</resources>
